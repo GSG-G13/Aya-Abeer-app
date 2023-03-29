@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Cairo', sans-serif; */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+body {
+    min-height: 100vh;
+    background-color: #f4f7ff;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.chat-logo {
+    display: flex;
+    align-items: center;
+    background-color: #bed1f9;
+    margin-top: 100px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.chat-logo img {
+    max-height: 80px;
+    object-fit: cover;
+}
+
+.chat-logo h1 {
+    color: #4c51ed;
+    margin-left: 15px;
+    letter-spacing: 5px;
+}
+
+.content-chat {
+    background-color: #bed1f9;
+    border-radius: 20px 20px 0 0;
+    padding: 20px 0;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+
+.content-chat form div {
+    width: 60px;
+    cursor: pointer;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4c51ed;
+    margin-left: 15px;
+}
+
+.content-chat form {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.img-send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-chat form input {
+    font-family: monospace;
+    width: 500px;
+    padding: 5px 15px;
+    background-color: #4c51ed33;
+    outline: none;
+    border: 1px solid #8b8f8d;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+.content-chat form img {
+    max-width: 20px;
+    object-fit: cover;
+}
+
+.chat-text  {
+    margin-top: 40px;
+    margin: 0 60px;
+    min-height: 40px;
+    height: auto;
+    
+}
+.chat-text p {
+    font-family: monospace;
+    padding: 5px 10px;
+    background-color: #4c51ed33;
+    line-height: 1.5;
+    border-radius: 4px ;
+    animation: text-anim 2s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes text-anim {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
