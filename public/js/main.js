@@ -1,4 +1,4 @@
-const button = document.getElementById('btn');
+const button = document.querySelector('.content-chat form div');
 const input = document.querySelector('#input-value');
 const chatText = document.querySelector('.chat-text');
 
