@@ -151,8 +151,13 @@ header .content  .home-image img {
 .error__desc {
     text-align: center;
     font-size: 1.5em;
+    transform: translateY(33vh);
 }
 
 .error__msg {
     color: #999;
+}
+.error__image {
+        position: absolute;
+            bottom: 0;
 }
