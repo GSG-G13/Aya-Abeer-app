@@ -7,7 +7,8 @@ const fetchfuc = require('./controllers/fetch');
 const router = require('./controllers/index');
 
 const app = express();
-const apiKey = process.env.OPENAI_API_KEY || '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';
+
+const apiKey = process.env.OPENAI_API_KEY;
 
 app.set('PORT', process.env.PORT || 3000);
 app.use(express.static(path.join(__dirname, '..', 'public')));
@@ -28,7 +29,9 @@ app.get('/data/:name', (req, res) => {
   };
   fetchfuc('https://api.openai.com/v1/completions', requestOptions)
     .then((response) => response.json())
-    .then((data) => res.json(data.choices[0]))
+    .then((data) => {
+      res.json(data.choices[0]);
+    })
     .catch((error) => console.log('Error:', error));
 });
 app.use(router);
