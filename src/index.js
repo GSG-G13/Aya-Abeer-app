@@ -2,6 +2,6 @@ require('dotenv').config();
 
 const app = require('./app');
 
-app.listen(app.get('PORT'), () => {
+app.listen(3000, () => {
   console.log(`Listening on port http://localhost:${app.get('PORT')}`);
 });
